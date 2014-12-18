@@ -1,7 +1,7 @@
 # nginx-globals
 
 ## Summary
-My nginx configuration files that were crafted security in mind, combined into seperate conf files to simplify locking down sites. Benefit from my years of tweaking nginx, and fortify your webserver with more vitamins and nutriuents than ever before!
+My nginx configuration files that were crafted with security in mind, all combined into seperate conf files to simplify locking down sites. This is a simple project, but will help lock down nginx (likely) more than you have it now. Benefit from my years of tweaking nginx, and fortify your webserver with more vitamins and nutriuents than ever before!
 
 ## Usage
 * Install nginx (yes, but someone had to say it)
@@ -40,7 +40,7 @@ nginx -t
 * Errors? Fix them. No errors? Restart nginx
 
 ## Feedback
-These are my tried and true nginx configs, some crafted from trial and error, some snarfed from various sites online (credit given where known, see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them. Please feel free to open an issue, or make a pull request - Thanks!
+These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites online, giving credit given where known (see individual files for details, no cash value). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - Thanks!
 
 ## License
 The MIT License (MIT)
