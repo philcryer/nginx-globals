@@ -15,7 +15,7 @@ git clone https://github.com/philcryer/nginx-globals.git
 * Copy the globals into place
 
 ```
-cp -R nginx-globals /etc/nginx/
+cp -R nginx-globals/globals /etc/nginx/
 ```
 
 * Activate them within a 'sites-enabled' config
