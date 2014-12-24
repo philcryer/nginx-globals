@@ -25,6 +25,7 @@ server {
   ...
   include       globals/cache.conf;
   include       globals/drop.conf;
+  include       globals/php.conf;
   include       globals/secure.conf;
   include       globals/ssl.conf;
   ...
