@@ -1,24 +1,24 @@
 # nginx-globals
 
 ## Summary
-This project contains my current nginx configuration files that were crafted with security in mind, all combined into seperate conf files to simplify and standize configurations, thus locking down sites. This is a simple project, but will help lock down nginx (likely) more than you have it now. Benefit from my years of tweaking nginx, and fortify your webserver with more vitamins and nutriuents than ever before!
+This project contains my current nginx configuration files that were crafted with security in mind, all combined into seperate conf files to simplify and standize configurations. By calling these from include statements in your nginx configs it makes locking down your nginx sites easy. This is a simple project, but will help lock down nginx (likely) more than you have it now. Benefit from my years of tweaking nginx, and fortify your webserver, all feedback welcome!
 
 ## Usage
-* Install nginx (yes, but someone had to say it)
+* Install nginx (I know, but someone had to say it)
 
-* Checkout the project
+* Checkout the nginx-globals project
 
 ```
 git clone https://github.com/philcryer/nginx-globals.git
 ```
 
-* Copy the globals into place
+* (as root) copy the globals into place
 
 ```
 cp -R nginx-globals/globals /etc/nginx/
 ```
 
-* Activate them within a 'sites-enabled' config
+* Edit an nginx site config and activate the globals you want, removing any duplicate lines from current configs
 
 ```
 server {
@@ -41,12 +41,12 @@ nginx -t
 * Errors? Fix them. No errors? Restart nginx
 
 ## Feedback
-These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites online, giving credit given where known (see individual files for details, no cash value). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - Thanks!
+These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites online, giving credit given where known (see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - Thanks!
 
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2014 philcryer::fak3r
+Copyright (c) 2015 philcryer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
