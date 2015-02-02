@@ -38,10 +38,12 @@ server {
 nginx -t
 ```
 
-* Errors? Fix them. No errors? Restart nginx
+* Errors? It's usually just those duplicate lines in existing configs. Fix them and run `nginx -t` again (repeat as many times as neccessary)
+
+* No errors? Restart nginx
 
 ## Feedback
-These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites online, giving credit given where known (see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - Thanks!
+These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites online, giving credit where due (see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - thanks!
 
 ## License
 The MIT License (MIT)
