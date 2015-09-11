@@ -1,7 +1,7 @@
 # nginx-globals
 
 ## Summary
-This project contains my current nginx configuration files that were crafted with security in mind, all combined into seperate conf files to simplify and standize configurations. By calling these from include statements in your nginx configs it makes locking down your nginx sites easy. This is a simple project, but will help lock down nginx (likely) more than you have it now. Benefit from my years of tweaking nginx, and fortify your webserver, all feedback welcome!
+This project contains my current nginx configuration files that were crafted with security in mind, all combined into separate conf files to simplify and standardize configurations. By calling these from include statements in your nginx configs it makes locking down your nginx server easy - so while this is a simple project, it will help lock down nginx (likely) more than you have it now. Benefit from my years of tweaking nginx, and fortify your webserver! All feedback welcome!
 
 ## Usage
 * Install nginx (I know, but someone had to say it)
