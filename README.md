@@ -6,7 +6,7 @@ This project contains my current nginx configuration files that were crafted wit
 __New__ supports renewal of [Let's Encrypt](https://letsencrypt.org/) free SSL certs by default. So easy!
 
 ## Usage
-* Install nginx (I know, but someone had to say it)
+* Install nginx (a version with [naxsi](https://github.com/nbs-system/naxsi) WAF built in recommended, otherwise you can [roll your own](https://github.com/nbs-system/naxsi/wiki) to enable it)
 
 * Checkout the nginx-globals project
 
@@ -43,6 +43,8 @@ nginx -t
 * Errors? It's usually just those duplicate lines in existing configs. Fix them and run `nginx -t` again (repeat as many times as neccessary)
 
 * No errors? Restart nginx
+
+* Test your SSL setup using [Qualys SSL Labs](https://www.ssllabs.com/ssltest/index.html) server test, and expect to get an __A+__
 
 ## Feedback
 These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites online, giving credit where due (see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - thanks!
