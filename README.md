@@ -3,6 +3,8 @@
 ## Summary
 This project contains my current nginx configuration files that were crafted with security in mind, all combined into separate conf files to simplify and standardize configurations. By calling these from include statements in your nginx configs it makes locking down your nginx server easy - so while this is a simple project, it will help lock down nginx (likely) more than you have it now. Benefit from my years of tweaking nginx, and fortify your webserver! All feedback welcome!
 
+__New__ supports renewal of [Let's Encrypt](https://letsencrypt.org/) free SSL certs by default. So easy!
+
 ## Usage
 * Install nginx (I know, but someone had to say it)
 
@@ -48,7 +50,7 @@ These are my tried and true nginx configs, some crafted from trial and error, wh
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 philcryer
+Copyright (c) 2016 philcryer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
