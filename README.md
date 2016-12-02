@@ -6,7 +6,7 @@ This project contains my current nginx configuration files that were crafted wit
 __New__ supports renewal of [Let's Encrypt](https://letsencrypt.org/) free SSL certs by default. So easy!
 
 ## Usage
-* Install nginx, a version with [naxsi](https://github.com/nbs-system/naxsi) WAF built in recommended (I'm using the OpenBSD version from [Ports](http://ports.su/www/nginx,-naxsi), otherwise you can [roll your own](https://github.com/nbs-system/naxsi/wiki) to enable it
+* Install nginx, a version with [naxsi](https://github.com/nbs-system/naxsi) WAF built in recommended (I'm using the OpenBSD version from [Ports](http://ports.su/www/nginx,-naxsi)), otherwise you can [roll your own](https://github.com/nbs-system/naxsi/wiki) to enable it
 
 * (Optional, but highly recommended) Get a free SSL Cert from [Let's Encrypt](https://letsencrypt.org/getting-started/) if you don't already have one
 
