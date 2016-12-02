@@ -8,19 +8,21 @@ __New__ supports renewal of [Let's Encrypt](https://letsencrypt.org/) free SSL c
 ## Usage
 * Install nginx (a version with [naxsi](https://github.com/nbs-system/naxsi) WAF built in recommended, otherwise you can [roll your own](https://github.com/nbs-system/naxsi/wiki) to enable it)
 
+* (Optional, but highly recommended) Get a free SSL Cert from [Let's Encrypt](https://letsencrypt.org/getting-started/) if you don't already have one
+
 * Checkout the nginx-globals project
 
 ```
 git clone https://github.com/philcryer/nginx-globals.git
 ```
 
-* (as root) copy the globals into place
+* As root, Copy the globals configs into the nginx directory
 
 ```
 cp -R nginx-globals/globals /etc/nginx/
 ```
 
-* Edit an nginx site config and activate the globals you want, removing any duplicate lines from current configs
+* Edit your nginx site config and activate the globals you want, commenting out anything you don't want to run (if any)
 
 ```
 server {
@@ -34,15 +36,15 @@ server {
 }
 ```
 
-* Test the config changes
+* Test the config changes before running them in nginx
 
 ```
 nginx -t
 ```
 
-* Errors? It's usually just those duplicate lines in existing configs. Fix them and run `nginx -t` again (repeat as many times as neccessary)
+* Errors? Most are simply duplicate lines from current configs that you can remove/comment out since they're now in the globals. Do that and run `nginx -t` again (repeat as many times as neccessary)
 
-* No errors? Restart nginx
+* No errors? Restart nginx with the global configs
 
 * Test your SSL setup using [Qualys SSL Labs](https://www.ssllabs.com/ssltest/index.html) server test, and expect to get an __A+__
 
