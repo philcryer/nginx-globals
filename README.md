@@ -1,14 +1,20 @@
 # nginx-globals
 
 ## Summary
-This project contains my current nginx configuration files that were crafted with security in mind, all combined into separate conf files to simplify and standardize configurations. By calling these from include statements in your nginx configs it makes locking down your nginx server easy - so while this is a simple project, it will help lock down nginx (likely) more than you have it now. Benefit from my years of tweaking nginx, and fortify your webserver! All feedback welcome!
+This project contains my current nginx configuration files that were crafted with security in mind, all combined into separate conf files to simplify and standardize configurations. By calling these from include statements in your NGINX configs it makes locking down your nginx server easy - so while this is a simple project, it will help lock down NGINX (likely) more than you have it now. Benefit from my years of tweaking NGINX, and fortify your webserver! All feedback welcome!
 
-__New__ supports renewal of [Let's Encrypt](https://letsencrypt.org/) free SSL certs by default. So easy!
+__New__ this doc now covers the use of [Let's Encrypt](https://letsencrypt.org/) to include free SSL certificates. So easy!
 
 ## Usage
-* Install nginx, a version with [naxsi](https://github.com/nbs-system/naxsi) WAF built in recommended (I'm using the OpenBSD version from [Ports](http://ports.su/www/nginx,-naxsi)), otherwise you can [roll your own](https://github.com/nbs-system/naxsi/wiki) to enable it
+* Install NGINX
 
-* (Optional, but highly recommended) Get a free SSL Cert from [Let's Encrypt](https://letsencrypt.org/getting-started/) if you don't already have one
+* (Optinoal, but  highly recommended) Install NGINX, but use a version with [naxsi](https://github.com/nbs-system/naxsi) (which stands for Nginx Anti XSS & SQL Injection) enabled to provide WAF style protection. I'm using the OpenBSD version from [Ports](http://ports.su/www/nginx,-naxsi)), otherwise you can [roll your own](https://github.com/nbs-system/naxsi/wiki) to enable it
+
+* (Optional, but highly recommended) Get a free SSL Cert from [Let's Encrypt](https://letsencrypt.org/getting-started/), if you don't already have one. Use `certbot` to automate this, here's an example 
+
+```
+certbot certonly --agree-tos --webroot -w /var/www/htdocs -d DOMAIN -d www.DOMAIN
+```
 
 * Checkout the nginx-globals project
 
@@ -22,7 +28,7 @@ git clone https://github.com/philcryer/nginx-globals.git
 cp -R nginx-globals/globals /etc/nginx/
 ```
 
-* Edit your nginx site config and activate the globals you want, commenting out anything you don't want to run (if any)
+* Edit your nginx site config and activate the globals you want, commenting out anything you don't want to run (if any). If you're running SSL be sure to specify the path and file name of the SSL cert and its key 
 
 ```
 server {
@@ -46,7 +52,11 @@ nginx -t
 
 * No errors? Restart nginx with the global configs
 
-* (Optional, but highly recommended) If you're running SSL, test your SSL setup using [Qualys SSL Server Test](https://www.ssllabs.com/ssltest/index.html), then [High-Tech Bridge SSL Server Security Test](https://www.htbridge.com/ssl/), and expect to get an __A+__ on both.
+```
+service nginx restart
+```
+
+* (Optional if you're running SSL) test your SSL setup using [Qualys SSL Server Test](https://www.ssllabs.com/ssltest/index.html), then [High-Tech Bridge SSL Server Security Test](https://www.htbridge.com/ssl/), and expect to get an __A+__ on both.
 
 ## Feedback
 These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites or posts online, giving credit where due (see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - thanks!
