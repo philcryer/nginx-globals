@@ -46,15 +46,15 @@ nginx -t
 
 * No errors? Restart nginx with the global configs
 
-* Test your SSL setup using [Qualys SSL Server Test](https://www.ssllabs.com/ssltest/index.html), then [High-Tech Bridge SSL Server Security Test](https://www.htbridge.com/ssl/), and expect to get an __A+__ on both.
+* (Optional, but highly recommended) If you're running SSL, test your SSL setup using [Qualys SSL Server Test](https://www.ssllabs.com/ssltest/index.html), then [High-Tech Bridge SSL Server Security Test](https://www.htbridge.com/ssl/), and expect to get an __A+__ on both.
 
 ## Feedback
-These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites online, giving credit where due (see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - thanks!
+These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites or posts online, giving credit where due (see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - thanks!
 
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2016 philcryer
+Copyright (c) 2017 philcryer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
