@@ -1,4 +1,7 @@
 # nginx-globals
+<a class="github-button" href="https://github.com/philcryer/nginx-globals" data-icon="octicon-star" data-show-count="true" aria-label="Star philcryer/nginx-globals on GitHub">Star</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/philcryer" data-show-count="true" aria-label="Follow @philcryer on GitHub">Follow @philcryer</a>
 
 ## Summary
 This project contains my current nginx configuration files that were crafted with security in mind, all combined into separate conf files to simplify and standardize configurations. By calling these from include statements in your NGINX configs it makes locking down your nginx server easy - so while this is a simple project, it will help lock down NGINX (likely) more than you have it now. Benefit from my years of tweaking NGINX, and fortify your webserver! All feedback welcome!
@@ -88,4 +91,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
+<script async defer src="https://buttons.github.io/buttons.js"></script>
