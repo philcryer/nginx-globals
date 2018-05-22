@@ -8,9 +8,9 @@ __New__ this doc now covers the use of [Let's Encrypt](https://letsencrypt.org/)
 ## Usage
 * Install NGINX
 
-* (Optinoal, but  highly recommended) Install NGINX, but use a version with [naxsi](https://github.com/nbs-system/naxsi) (which stands for Nginx Anti XSS & SQL Injection) enabled to provide WAF style protection. I'm using the OpenBSD version from [Ports](http://ports.su/www/nginx,-naxsi)), otherwise you can [roll your own](https://github.com/nbs-system/naxsi/wiki) to enable it
+* (Optional, but  highly recommended) Install an NGINX version with [naxsi](https://github.com/nbs-system/naxsi) (which stands for Nginx Anti XSS & SQL Injection) enabled to provide WAF style protection. I'm using the OpenBSD version from [Ports](http://ports.su/www/nginx,-naxsi)), otherwise you can [roll your own](https://github.com/nbs-system/naxsi/wiki) to enable it in Linux
 
-* (Optional, but highly recommended) Get a free SSL Cert from [Let's Encrypt](https://letsencrypt.org/getting-started/), if you don't already have one. Use `certbot` to automate this, here's an example 
+* (Optional, but highly recommended) Get a free SSL Cert from [Let's Encrypt](https://letsencrypt.org/getting-started/), if you don't already have one. Use `certbot` to automate this, here's an example, just replace DOMAIN with your FQDN
 
 ```
 certbot certonly --agree-tos --webroot -w /var/www/htdocs -d DOMAIN -d www.DOMAIN
@@ -73,7 +73,7 @@ These are my tried and true nginx configs, some crafted from trial and error, wh
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2017 philcryer
+Copyright (c) 2018 philcryer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
