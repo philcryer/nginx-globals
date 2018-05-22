@@ -63,6 +63,10 @@ Things can always be improved, here are some more tools to help
 
 * [yandex/gixy](https://github.com/yandex/gixy)
 
+## Apache version?
+
+I always thought of making an Apache version of these rules, while I don't use it for personal projects anymore, I do encounter it from time to time on client jobs. I've found a project very similar to mine at [h5bp/server-configs-apache](https://github.com/h5bp/server-configs-apache/], expecially checkout the [security](https://github.com/h5bp/server-configs-apache/tree/master/src/security) configs, excellent work there!
+
 ## Feedback
 These are my tried and true nginx configs, some crafted from trial and error, while some were snarfed from various sites or posts online, giving credit where due (see individual files for details). Having said that, there's no way they're all perfect and I'm sure others could improve on them, so please do! Open an issue, suggest changes or make a pull request - thanks!
 
